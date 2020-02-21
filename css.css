@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+}
+ol{
+    font-size: 20px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+strong{
+    font-size: 30px;
+    text-decoration: none;
+}
+table , th,td{
+    border: 3px solid black;
+}
+.code{
+    margin-left: 10px;
+}
+#contents{
+    margin-right: 20px;
+}
+table{
+    text-align: center;
+    margin-left: 230px;
+    margin-top: 200px;
+    width: 70%;
+}
+h3{
+    text-align: end;
+}
+#back{
+    text-align: right;
+    font-size: 40px;
+}
+#inputs{
+    text-align: center;
+}
+.texti{
+    font-size: 30px;
+    width: auto;
+}
+.hidden{
+    display: none;
+}
+#hid{
+    text-align: center;
+    border: solid black 2px;
+    width:640px;
+    margin-left: 600px;
+}
+#admin{
+    display: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice maker</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+    <h1>Voice make</h1>
+    <h1 id='admin'><a href="effects.html">admin</a></h1>
+    <p id="descibe">
+        <ol>
+            <li><a target="_blank" href="https://download.mobatek.net/2002020012904840/MobaXterm_Portable_v20.0.zip">mobaxterm 설치</a><input type="button"value="함"onclick="dis(0)"></li><br>
+            <li><a target="_blank" href="https://developers.kakao.com/apps/new">앱 만들기<i>(회사명:대충 입력)</i></a><input type="button"value="함"onclick="dis(1)"></li><br>
+            <li>rest api키 찾기(카카오 API 홈페이지 접속 - 내 어플리케이션 - [생성한앱] - 앱정보 - 앱키표시)<input type="button"value="함"onclick="dis(2)"></li><br>
+            <li>rest api 키 복사후 아래 상자에 붙여넣기(<strong>붙여넣은후에 api키 바꾸기키 누르기</strong>)<input type="button"value="함"onclick="dis(3)"></li><br>
+            <li>합성할 문장 아래 상자에 붙여넣기(<strong>붙여넣은후에 문장 바꾸기키 누르기</strong>)(글자수가 너무 많으면 안될수 있음)<input type="button"value="함"onclick="dis(4)"></li><br>
+            <li>파일명 아래 상자에 붙여넣기(<strong>붙여넣은후에 파일명 설정키 누르기</strong>)<input type="button"value="함"onclick="dis(5)"></li><br>
+            <li><span>카카오 API 홈페이지 접속 - 내 어플리케이션 - [생성한앱] - 설정 - 음성 - ON 으로 하기(사용목적:대충 입력)</span><input type="button"value="함"onclick="dis(6)"></li><br>
+            <li>display키 누르기 <input type="button"value="함"onclick="dis(7)"></li><br>
+            <li>mobaxterm을 실행한 후 start local terminal 클릭 후 아래 문장을 복사해서 붙여넣은 후 엔터<input type="button"value="함"onclick="dis(8)"></li><br>
+        </ol>
+    </p>
+    <p id="hid">
+        <span class="hidden">curl -v -X POST "https://kakaoi-newtone-openapi.kakao.com/v1/synthesize" \ <br>
+                -H "Content-Type: application/xml" \<br> </span>
+        <span class="hidden" id="comp">-H "Authorization: KakaoAK kkkkkkkkkkkkkkkkkkkkkk" \</span>
+        <span class="hidden">
+            -d '&lt;speak><br>
+            <span id="comp2">&lt;voice>문장&lt;/voice></span>
+            <span><br></span>
+             <span id='comp3'>&lt;/speak>' > 파일명.mp3</span>
+        </span>
+    </p>
+    <form action="" method="get" id='inputs'>
+    <input type="text" name="" placeholder="api를 붙여넣기" class="texti" id="api1">
+    <input type="button" value="api키 바꾸기" onclick="
+        change();
+    ">
+     <input type="text" name="" placeholder="문장 넣기" class="texti" id="api2">
+     <input type="button" value="문장 바꾸기" onclick="
+         change2();
+     ">
+      <input type="text" name="" placeholder="파일명 넣기" class="texti" id="api3">
+      <input type="button" value="파일명 설정" onclick="
+          change3();
+      ">
+    <input type="button" id='ch' value="display" onclick="
+        block();
+    ">
+    </form>
+</body>
+</html>
