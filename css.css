@@ -1,7 +1,7 @@
 h1{
     text-align: center;
     font-size: 60px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 ol{
     font-size: 20px;
@@ -46,11 +46,15 @@ h3{
     display: none;
 }
 #hid{
-    text-align: center;
     border: solid black 2px;
     width:640px;
-    margin-left: 600px;
+    margin-left: 200px;
 }
 #admin{
     display: none;
+}
+#mobile{
+    display: none;
+    font-size: 100px;
+    text-align: center;
 }

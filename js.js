@@ -4,39 +4,36 @@ function input(){
 }
 
 function change(){
-    var apivalue;
     var input = document.getElementById('api1').value;
-    apivalue = input;
     var c = 'kkkkkkkkkkkkkkkkkkkkkk';
+    admins(input);
+    $('#comp').each(function() {
+    var text = $(this).text();
+    $(this).text(text.replace(c,input));
+    });
+}
+function admins(apivalue){
     if(apivalue=="iamadmin"){
         var userInput = prompt("password"+"");
         if(userInput == 'pass'){
         document.getElementById('admin').style.display="block";
     }
     }
-    $('#comp').each(function() {
-    var text = $(this).text();
-    $(this).text(text.replace(c,apivalue));
-    });
 }
 function change2(){
-    var apivalue;
     var input = document.getElementById('api2').value;
-    apivalue = input;
     var c = '문장';
     $('#comp2').each(function() {
     var text = $(this).text();
-    $(this).text(text.replace(c,apivalue));
+    $(this).text(text.replace(c,input));
     });
 }
 function change3(){
-    var apivalue;
     var input = document.getElementById('api3').value;
-    apivalue = input;
     var c = '파일명';
     $('#comp3').each(function() {
     var text = $(this).text();
-    $(this).text(text.replace(c,apivalue));
+    $(this).text(text.replace(c,input));
     });
 }
 
@@ -68,4 +65,20 @@ function dis(z){
     if(z === 8){
         alert('complete')
     }
+}
+function mobile(){
+var filter = "win16|win32|win64|mac|MacIntel";
+var vWebType = "";
+if (navigator.platform ) {
+ if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
+  vWebType = "MOBILE";
+ } else {
+  vWebType = "PC";
+
+ }
+}
+if(vWebType=='MOBILE'){
+    document.getElementsByTagName('body').style.display='none';
+    document.getElementById("mobile").style.display='block';
+}
 }
