@@ -67,18 +67,15 @@ function dis(z){
     }
 }
 function mobile(){
-var filter = "win16|win32|win64|mac|MacIntel";
-var vWebType = "";
-if (navigator.platform ) {
- if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
-  vWebType = "MOBILE";
- } else {
-  vWebType = "PC";
-
- }
-}
-if(vWebType=='MOBILE'){
-    document.getElementsByTagName('body').style.display='none';
-    document.getElementById("mobile").style.display='block';
-}
+    var filter = "win16|win32|win64|mac|macintel";
+     if ( navigator.platform ) { 
+         if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ){
+            alert('mobile 접속');
+            document.getElementsByTagName('body').style.display='none';
+            document.getElementById("mobile")
+            } 
+        else {
+            alert('pc 접속');
+            }
+       }
 }
