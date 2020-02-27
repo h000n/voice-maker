@@ -63,7 +63,7 @@ function dis(z){
     var d = document.getElementsByTagName('li');
     d[z].style.display="none";
     if(z === 8){
-        alert('complete')
+        alert('complete!')
     }
 }
 function mobile(){
