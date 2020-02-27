@@ -73,9 +73,6 @@ function mobile(){
             alert('mobile 접속');
             document.getElementsByTagName('body').style.display='none';
             document.getElementById("mobile")
-            } 
-        else {
-            alert('pc 접속');
             }
        }
 }
