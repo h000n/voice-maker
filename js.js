@@ -71,7 +71,8 @@ function mobile(){
      if ( navigator.platform ) { 
          if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ){
             alert('모바일 환경 미지원 컴퓨터로 접속권장');
-            document.getElementById('body').style.display='none'
+            document.getElementById('body').style.display='none';
+            document.getElementById('mobile').style.display='block';
             }
        }
 }
