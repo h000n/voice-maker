@@ -70,9 +70,8 @@ function mobile(){
     var filter = "win16|win32|win64|mac|macintel";
      if ( navigator.platform ) { 
          if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ){
-            alert('mobile 접속');
-            document.getElementById('body').style.display='none';
-            document.getElementById('mobile').style.display='block';
+            alert('모바일 환경 미지원 컴퓨터로 접속권장');
+            document.getElementById('body').style.display='none'
             }
        }
 }
