@@ -71,8 +71,8 @@ function mobile(){
      if ( navigator.platform ) { 
          if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ){
             alert('mobile 접속');
-            document.getElementsByTagName('body').style.display='none';
-            document.getElementById("mobile")
+            document.getElementById('body').style.display='none';
+            document.getElementById('mobile').style.display='block';
             }
        }
 }
