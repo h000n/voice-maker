@@ -36,7 +36,6 @@ function change3(){
     $(this).text(text.replace(c,input));
     });
 }
-
 function block(){
     var ch =  document.querySelector('#ch').value;
     var comp = document.getElementsByClassName('hidden');
@@ -61,9 +60,11 @@ function block(){
 
 function dis(z){
     var d = document.getElementsByTagName('li');
+    var all = document.getElementById('lists');
     d[z].style.display="none";
     if(z === 8){
         alert('complete!')
+        all.style.display= 'none';
     }
 }
 function mobile(){

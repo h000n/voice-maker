@@ -16,7 +16,7 @@
     <h1>Voice make</h1>
     <h1 id='admin'><a href="effects.html">admin</a></h1>
     <p id="descibe">
-        <ol>
+        <ol id='lists'>
             <li><a target="_blank" href="https://download.mobatek.net/2002020012904840/MobaXterm_Portable_v20.0.zip">mobaxterm 설치</a><input type="button"value="함"onclick="dis(0)"></li><br>
             <li><a target="_blank" href="https://developers.kakao.com/apps/new">앱 만들기<i>(회사명:대충 입력)</i></a><input type="button"value="함"onclick="dis(1)"></li><br>
             <li>rest api키 찾기(카카오 API 홈페이지 접속 - 내 어플리케이션 - [생성한앱] - 앱정보 - 앱키표시)<input type="button"value="함"onclick="dis(2)"></li><br>
@@ -61,19 +61,14 @@
     <script>
         mobile()
     </script>
+<!--                                comment system                         -->
     <div id="disqus_thread"></div>
     <script>
-    
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
     var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = h000n.github.io/voice-maker ;
+    this.page.identifier = Voice-maker;
     };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function() {
     var d = document, s = d.createElement('script');
     s.src = 'https://voice-maker.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
@@ -81,6 +76,5 @@
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
 </body>
 </html>
