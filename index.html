@@ -20,7 +20,7 @@
     <script src="js.js"></script>
     <meta name="naver-site-verification" content="f0d10ce57620d6b1b3f271ebde741097c0bc62f6"/>
     <meta name="google-site-verification" content="OJBufxyVLiIP1zb2ayCQpFX0lQlF3RGW2Cto0UwJLEg" />
-    <link rel="canonical" href="http://voicer.ga/index.html">
+    <link rel="canonical" href="http://voicer.ga/">
     <meta name="description" content="무료 음성합성 도우미">
     <meta property="og:title" content="hoon의 voice maker">
     <meta property="og:description" content="무료 음성합성 도우미">
@@ -44,17 +44,19 @@
             <li>mobaxterm을 실행한 후 start local terminal 클릭 후 아래 문장을 복사해서 붙여넣은 후 엔터<input type="button"value="함"onclick="dis(8)"></li><br>
         </ol>
     </p>
-    <p id="hid">
-        <span class="hidden">curl -v -X POST "https://kakaoi-newtone-openapi.kakao.com/v1/synthesize" \ <br>
-                -H "Content-Type: application/xml" \<br> </span>
-        <span class="hidden" id="comp">-H "Authorization: KakaoAK kkkkkkkkkkkkkkkkkkkkkk" \</span>
-        <span class="hidden">
-            -d '&lt;speak><br>
-            <span id="comp2">&lt;voice>문장&lt;/voice></span>
-            <span><br></span>
-             <span id='comp3'>&lt;/speak>' > 파일명.mp3</span>
-        </span>
-    </p>
+    <textarea name="" id="" cols="30" rows="10">
+        <p id="hid">
+            <span class="hidden">curl -v -X POST "https://kakaoi-newtone-openapi.kakao.com/v1/synthesize" \ <br>
+                    -H "Content-Type: application/xml" \<br> </span>
+            <span class="hidden" id="comp">-H "Authorization: KakaoAK kkkkkkkkkkkkkkkkkkkkkk" \</span>
+            <span class="hidden">
+                -d '&lt;speak><br>
+                <span id="comp2">&lt;voice>문장&lt;/voice></span>
+                <span><br></span>
+                <span id='comp3'>&lt;/speak>' > 파일명.mp3</span>
+            </span>
+        </p>
+    </textarea>
     <form action="" method="get" id='inputs'>
     <input type="text" name="" placeholder="api를 붙여넣기" class="texti" id="api1">
     <input type="button" value="api키 바꾸기" onclick="

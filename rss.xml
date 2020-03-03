@@ -15,7 +15,6 @@
         </image>
 
         <ttl>1440</ttl>
-       <!--
         <item>
             <title>Voice maker</title>
             <link>
@@ -23,7 +22,7 @@
             </link>
             <guid isPermaLink="false">http://voicer.ga/#voice-maker</guid>
             <description/>
-        </item>-->
+        </item>
             <item>
             <title>admin</title>
             <link>
