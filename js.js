@@ -39,13 +39,15 @@ function change3(){
 function block(){
     var ch =  document.querySelector('#ch').value;
     var comp = document.getElementsByClassName('hidden');
+    var styles = document.getElementById("hid");
     if(ch === 'display'){
-    var i = 0;
-    document.querySelector('#ch').value = 'undisplay';
-    while(i<4){
-        comp[i].style.display='block';
-        i = i+1;
-    }
+        var i = 0;
+        styles.style.borderColor ='black';
+        document.querySelector('#ch').value = 'undisplay';
+        while(i<4){
+            comp[i].style.display='block';
+            i = i+1;
+        }
     }
     else{
         document.querySelector('#ch').value = 'display';
@@ -53,7 +55,7 @@ function block(){
         while(i<4){
         comp[i].style.display='none';
         i = i+1;
-    }
+        styles.style.borderColor ='white';
     
     }
 }
@@ -76,4 +78,5 @@ function mobile(){
             document.getElementById('mobile').style.display='block';
             }
        }
+    }
 }
