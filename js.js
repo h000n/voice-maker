@@ -1,8 +1,3 @@
-function input(){
-    var input = document.getElementById("api").value;
-    apivalue = input;
-}
-
 function change(){
     var input = document.getElementById('api1').value;
     var c = 'kkkkkkkkkkkkkkkkkkkkkk';
@@ -17,6 +12,7 @@ function admins(apivalue){
         var userInput = prompt("password"+"");
         if(userInput == 'pass'){
         document.getElementById('admin').style.display="block";
+        document.getElementById('hid').style.display="none";
     }
     }
 }
@@ -59,7 +55,7 @@ function block(){
     
     }
 }
-
+}
 function dis(z){
     var d = document.getElementsByTagName('li');
     var all = document.getElementById('lists');
@@ -79,4 +75,3 @@ function mobile(){
             }
        }
     }
-}
